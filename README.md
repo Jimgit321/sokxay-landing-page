@@ -12,4 +12,5 @@ https://jimgit321.github.io/sokxay-landing-page/
 - `about.html` — Company Story & Milestones Timeline
 - `leadership.html` — Executive Leadership
 - `news.html` — News & Events
+- `careers.html` — Careers & Online Job Application
 - `contact.html` — Contact Information

@@ -14,6 +14,7 @@
       'nav.about': 'ກ່ຽວກັບເຮົາ',
       'nav.leadership': 'ຄະນະບໍລິຫານ',
       'nav.news': 'ຂ່າວສານ',
+      'nav.careers': 'ສະໝັກງານ',
       'nav.contact': 'ຕິດຕໍ່',
       'hero.h1': 'ກຸ່ມບໍລິສັດ ໂຊກໄຊ<br><span>ເຕີບໂຕໄປນຳກັນ</span>',
       'hero.p': 'ຜູ້ນຳດ້ານການຄ້າ ແລະ ການລົງທຶນ<br>ທີ່ເຊື່ອມຕໍ່ໂອກາດສູ່ອະນາຄົດ',
@@ -67,6 +68,7 @@
       'nav.about': 'About Us',
       'nav.leadership': 'Leadership',
       'nav.news': 'News',
+      'nav.careers': 'Careers',
       'nav.contact': 'Contact',
       'hero.h1': 'Sokxay Group<br><span>Growing Together</span>',
       'hero.p': 'Leading in trade and investment,<br>connecting opportunities to the future.',
@@ -140,12 +142,13 @@
     // 2. Direct selector updates for seamless zero-config toggle
     const map = [
       // Navigation
-      { sel: '.navigation nav a:nth-child(1)', key: 'nav.home' },
-      { sel: '.navigation nav a:nth-child(2)', key: 'nav.business' },
-      { sel: '.navigation nav a:nth-child(3)', key: 'nav.about' },
-      { sel: '.navigation nav a:nth-child(4)', key: 'nav.leadership' },
-      { sel: '.navigation nav a:nth-child(5)', key: 'nav.news' },
-      { sel: '.navigation nav a:nth-child(6)', key: 'nav.contact' },
+      { sel: '.navigation nav a[href="index.html"]', key: 'nav.home' },
+      { sel: '.navigation nav a[href="business.html"]', key: 'nav.business' },
+      { sel: '.navigation nav a[href="about.html"]', key: 'nav.about' },
+      { sel: '.navigation nav a[href="leadership.html"]', key: 'nav.leadership' },
+      { sel: '.navigation nav a[href="news.html"]', key: 'nav.news' },
+      { sel: '.navigation nav a[href="careers.html"]', key: 'nav.careers' },
+      { sel: '.navigation nav a[href="contact.html"]', key: 'nav.contact' },
 
       // Hero
       { sel: '.hero h1', key: 'hero.h1' },
@@ -223,6 +226,7 @@
     });
 
     syncMobileMenu(lang);
+    document.dispatchEvent(new CustomEvent('sokxay:lang', { detail: { lang } }));
   }
 
   let mobileDrawerEl = null;

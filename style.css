@@ -104,6 +104,7 @@
   position: relative;
   padding: 8px 3px;
   color: var(--ink);
+  white-space: nowrap;
   transition: color 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s ease;
   display: inline-flex;
   align-items: center;
@@ -434,8 +435,8 @@ body.nav-open {
     width: calc(100% - 56px);
   }
   .navigation nav {
-    gap: 18px;
-    font-size: 13.5px;
+    gap: 14px;
+    font-size: 13px;
   }
   .highlights {
     width: calc(100% - 56px);
