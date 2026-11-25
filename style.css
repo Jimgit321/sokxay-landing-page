@@ -401,26 +401,9 @@ body.nav-open {
 }
 
 .mobile-drawer-meta {
-  margin-top: 14px;
-  padding-top: 16px;
+  margin-top: 12px;
+  padding-top: 14px;
   border-top: 1px solid #e6edf4;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.mobile-drawer-call {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  min-height: 46px;
-  border-radius: 12px;
-  background: #155b9d;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
 }
 
 .mobile-drawer-tagline {

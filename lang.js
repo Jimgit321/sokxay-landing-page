@@ -54,8 +54,7 @@
       'foot.follow': 'ຕິດຕາມພວກເຮົາ',
       'foot.top': 'ກັບຂຶ້ນເທິງ ↑',
       'menu.open': 'ເປີດເມນູ',
-      'menu.close': 'ປິດເມນູ',
-      'menu.call': 'ຕິດຕໍ່ໂທ: 021 221212'
+      'menu.close': 'ປິດເມນູ'
     },
     en: {
       'nav.home': 'Home',
@@ -108,8 +107,7 @@
       'foot.follow': 'Follow Us',
       'foot.top': 'Back to Top ↑',
       'menu.open': 'Open menu',
-      'menu.close': 'Close menu',
-      'menu.call': 'Call Us: 021 221212'
+      'menu.close': 'Close menu'
     }
   };
 
@@ -264,10 +262,6 @@
         mobileNav.appendChild(link);
       });
     }
-    const callLabel = mobileDrawerEl.querySelector('.mobile-drawer-call span');
-    if (callLabel) {
-      callLabel.textContent = DICT[activeLang]['menu.call'];
-    }
   }
 
   function initMobileMenu() {
@@ -303,10 +297,6 @@
         '<div class="mobile-drawer-panel">' +
         '<nav class="mobile-nav" aria-label="Mobile navigation"></nav>' +
         '<div class="mobile-drawer-meta">' +
-        '<a class="mobile-drawer-call" href="tel:021221212">' +
-        '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.07 3h3a2 2 0 0 1 2 1.72l.4 2.76a2 2 0 0 1-.57 1.73L8.62 10.5a16 16 0 0 0 4.88 4.88l1.29-1.28a2 2 0 0 1 1.73-.57l2.76.4A2 2 0 0 1 22 16.92Z"/></svg>' +
-        '<span></span>' +
-        '</a>' +
         '<div class="mobile-drawer-tagline">' +
         '<span>LEADING IN TRADE &amp; INVESTMENT</span>' +
         '<span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>' +
