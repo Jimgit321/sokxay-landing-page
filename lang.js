@@ -5,6 +5,7 @@
   const SVG_UR = '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg>';
   const SVG_R = '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
   const SVG_U = '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>';
+  const SVG_SEARCH = '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>';
 
   const DICT = {
     lo: {
@@ -38,7 +39,7 @@
       'biz.all': 'ເບິ່ງໂຄງການທັງໝົດ <span>›</span>',
       'dir.title': 'ຮູ້ຈັກທຸລະກິດຂອງເຮົາ',
       'dir.desc': 'ເຄືອຂ່າຍທຸລະກິດ ແລະ ບໍລິສັດໃນເຄືອ ກຸ່ມບໍລິສັດ ໂຊກໄຊ',
-      'dir.all': 'ເບິ່ງທັງໝົດ <span>' + SVG_UR + '</span>',
+      'dir.all': 'ເບິ່ງທັງໝົດ <span>' + SVG_SEARCH + '</span>',
       'about.title': 'ຮູ້ຈັກ<br>ກຸ່ມບໍລິສັດໂຊກໄຊ',
       'about.intro': 'ຈາກຈຸດເລີ່ມຕົ້ນໃນປີ 2005 ສູ່ກຸ່ມທຸລະກິດທີ່ຫຼາກຫຼາຍ.',
       'about.body': 'ກຸ່ມບໍລິສັດ ໂຊກໄຊ ເປັນທຸລະກິດຂອງຄົນລາວ ທີ່ດຳເນີນງານດ້ານການຄ້າ, ການລົງທຶນ ແລະ ການບໍລິການ ພ້ອມທັງສ້າງຄວາມຮ່ວມມືກັບຄູ່ຮ່ວມງານທັງພາຍໃນ ແລະ ຕ່າງປະເທດ.',
@@ -91,7 +92,7 @@
       'biz.all': 'View All Projects <span>›</span>',
       'dir.title': 'Our Affiliated Companies',
       'dir.desc': 'Featured subsidiaries and corporate projects under Sokxay Group',
-      'dir.all': 'View All <span>' + SVG_UR + '</span>',
+      'dir.all': 'View All <span>' + SVG_SEARCH + '</span>',
       'about.title': 'Discover<br>Sokxay Group',
       'about.intro': 'From our roots in 2005 into a diverse, forward-looking conglomerate.',
       'about.body': 'Sokxay Group is a proudly 100% Lao-owned enterprise operating in trade, investment, and services, actively collaborating with domestic and international partners.',
