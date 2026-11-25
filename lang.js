@@ -2,6 +2,10 @@
  * Sokxay Group - Bilingual Language Switcher (Lao / English)
  */
 (function() {
+  const SVG_UR = '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8 7 17 7 17 16"></polyline></svg>';
+  const SVG_R = '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
+  const SVG_U = '<svg class="ui-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>';
+
   const DICT = {
     lo: {
       'nav.home': 'ໜ້າຫຼັກ',
@@ -34,7 +38,7 @@
       'biz.all': 'ເບິ່ງໂຄງການທັງໝົດ <span>›</span>',
       'dir.title': 'ຮູ້ຈັກທຸລະກິດຂອງເຮົາ',
       'dir.desc': 'ເຄືອຂ່າຍທຸລະກິດ ແລະ ບໍລິສັດໃນເຄືອ ກຸ່ມບໍລິສັດ ໂຊກໄຊ',
-      'dir.all': 'ເບິ່ງທັງໝົດ <span>↗</span>',
+      'dir.all': 'ເບິ່ງທັງໝົດ <span>' + SVG_UR + '</span>',
       'about.title': 'ຮູ້ຈັກ<br>ກຸ່ມບໍລິສັດໂຊກໄຊ',
       'about.intro': 'ຈາກຈຸດເລີ່ມຕົ້ນໃນປີ 2005 ສູ່ກຸ່ມທຸລະກິດທີ່ຫຼາກຫຼາຍ.',
       'about.body': 'ກຸ່ມບໍລິສັດ ໂຊກໄຊ ເປັນທຸລະກິດຂອງຄົນລາວ ທີ່ດຳເນີນງານດ້ານການຄ້າ, ການລົງທຶນ ແລະ ການບໍລິການ ພ້ອມທັງສ້າງຄວາມຮ່ວມມືກັບຄູ່ຮ່ວມງານທັງພາຍໃນ ແລະ ຕ່າງປະເທດ.',
@@ -43,8 +47,8 @@
       'lead.desc': 'ຮູ້ຈັກຄະນະຜູ້ບໍລິຫານຂອງພວກເຮົາ',
       'lead.all': 'ເບິ່ງຄະນະບໍລິຫານ <span>›</span>',
       'news.title': 'ຂ່າວສານ<br>ແລະ ກິດຈະກຳ',
-      'news.all': 'ເບິ່ງຂ່າວທັງໝົດ ↗',
-      'news.read': 'ອ່ານເພີ່ມເຕີມ ↗',
+      'news.all': 'ເບິ່ງຂ່າວທັງໝົດ ' + SVG_UR,
+      'news.read': 'ອ່ານເພີ່ມເຕີມ ' + SVG_UR,
       'contact.title': 'ມາສ້າງໂອກາດ<br>ໄປພ້ອມກັນ',
       'contact.desc': 'ຕິດຕໍ່ກຸ່ມບໍລິສັດໂຊກໄຊ ເພື່ອສອບຖາມຂໍ້ມູນ ແລະ ຄວາມຮ່ວມມືທາງທຸລະກິດ',
       'contact.btn': 'ຕິດຕໍ່ພວກເຮົາ',
@@ -52,7 +56,7 @@
       'foot.addr': 'ບ້ານທາດຫຼວງກາງ, ໜ່ວຍ 5,<br>ຖະໜົນກຳແພງເມືອງ, ເມືອງໄຊເສດຖາ,<br>ນະຄອນຫຼວງວຽງຈັນ',
       'foot.contact': 'ຕິດຕໍ່',
       'foot.follow': 'ຕິດຕາມພວກເຮົາ',
-      'foot.top': 'ກັບຂຶ້ນເທິງ ↑',
+      'foot.top': 'ກັບຂຶ້ນເທິງ ' + SVG_U,
       'menu.open': 'ເປີດເມນູ',
       'menu.close': 'ປິດເມນູ'
     },
@@ -87,7 +91,7 @@
       'biz.all': 'View All Projects <span>›</span>',
       'dir.title': 'Our Affiliated Companies',
       'dir.desc': 'Featured subsidiaries and corporate projects under Sokxay Group',
-      'dir.all': 'View All <span>↗</span>',
+      'dir.all': 'View All <span>' + SVG_UR + '</span>',
       'about.title': 'Discover<br>Sokxay Group',
       'about.intro': 'From our roots in 2005 into a diverse, forward-looking conglomerate.',
       'about.body': 'Sokxay Group is a proudly 100% Lao-owned enterprise operating in trade, investment, and services, actively collaborating with domestic and international partners.',
@@ -96,8 +100,8 @@
       'lead.desc': 'Meet the leadership team shaping our strategic growth',
       'lead.all': 'View Leadership Team <span>›</span>',
       'news.title': 'News &<br>Events',
-      'news.all': 'All News ↗',
-      'news.read': 'Read More ↗',
+      'news.all': 'All News ' + SVG_UR,
+      'news.read': 'Read More ' + SVG_UR,
       'contact.title': 'Let’s Create Opportunities<br>Together',
       'contact.desc': 'Get in touch with Sokxay Group for inquiries, partnerships, and collaborations',
       'contact.btn': 'Contact Us',
@@ -105,7 +109,7 @@
       'foot.addr': 'That Luang Kang Village, Unit 5,<br>Kamphaengmeuang Rd, Xaysettha District,<br>Vientiane Capital, Lao PDR',
       'foot.contact': 'Contact Us',
       'foot.follow': 'Follow Us',
-      'foot.top': 'Back to Top ↑',
+      'foot.top': 'Back to Top ' + SVG_U,
       'menu.open': 'Open menu',
       'menu.close': 'Close menu'
     }
@@ -255,7 +259,7 @@
         label.textContent = src.textContent.trim();
         const arrow = document.createElement('b');
         arrow.setAttribute('aria-hidden', 'true');
-        arrow.textContent = '→';
+        arrow.innerHTML = SVG_R;
         link.appendChild(label);
         link.appendChild(arrow);
         link.addEventListener('click', () => setMobileMenuState(false));
