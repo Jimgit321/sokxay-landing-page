@@ -1,7 +1,7 @@
 .careers-page {
   --car-blue: #155b9d;
   --car-navy: #10223a;
-  --car-muted: #627485;
+  --car-muted: #4c5f72;
   color: var(--car-navy);
 }
 
@@ -16,10 +16,10 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #53718b;
-  font-size: 10px;
+  color: #3f5b74;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
 }
 
 .careers-kicker > span:first-child {
@@ -49,6 +49,7 @@
   line-height: 1.4;
   letter-spacing: -0.04em;
   color: var(--car-navy);
+  text-wrap: balance;
 }
 
 .careers-intro-head p {
@@ -65,7 +66,7 @@
 }
 
 .value-box {
-  padding: 28px 26px;
+  padding: 26px 26px 28px;
   border: 1px solid #dbe8f0;
   border-radius: 16px;
   background: #f8fbfd;
@@ -74,18 +75,22 @@
 
 .value-box:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(10, 35, 65, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.value-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .value-icon {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: #e6f1f8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--car-blue);
-  margin-bottom: 18px;
+  flex-shrink: 0;
 }
 
 .value-icon svg {
@@ -94,10 +99,11 @@
 }
 
 .value-box h3 {
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 17px;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--car-navy);
+  text-wrap: balance;
 }
 
 .value-box p {
@@ -127,13 +133,14 @@
   line-height: 1.45;
   letter-spacing: -0.035em;
   color: var(--car-navy);
+  text-wrap: balance;
 }
 
 .jobs-heading > div > p {
   margin: 0;
   font-size: 14px;
   line-height: 1.8;
-  color: #5f7487;
+  color: #4c5f72;
 }
 
 .jobs-count {
@@ -173,7 +180,7 @@
   background: #155b9d;
   border-color: #155b9d;
   color: #ffffff;
-  box-shadow: 0 6px 16px rgba(21, 91, 157, 0.22);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14);
 }
 
 .jobs-grid {
@@ -194,7 +201,7 @@
 
 .job-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(22, 73, 118, 0.12);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.10);
   border-color: #b7d2e5;
 }
 
@@ -217,15 +224,15 @@
   border-radius: 99px;
   background: #eaf3fb;
   color: #155b9d;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
 
 .job-type {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-  color: #6b8195;
+  color: #4a6073;
 }
 
 .job-card h3 {
@@ -233,6 +240,7 @@
   font-size: 18px;
   line-height: 1.45;
   color: var(--car-navy);
+  text-wrap: balance;
 }
 
 .job-company {
@@ -265,7 +273,7 @@
 .job-unit {
   font-size: 12.5px;
   font-weight: 700;
-  color: #466682;
+  color: #425f77;
   line-height: 1.4;
 }
 
@@ -292,7 +300,7 @@
   gap: 6px;
   font-size: 12px;
   font-weight: 600;
-  color: #627485;
+  color: #4c5f72;
 }
 
 .job-location svg {
@@ -499,7 +507,7 @@
 
 .apply-note {
   font-size: 12px;
-  color: #6b8195;
+  color: #4a6073;
   line-height: 1.6;
 }
 
@@ -567,7 +575,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 32px;
+  gap: 28px;
   padding: 36px;
   border-radius: 18px;
   overflow: hidden;
@@ -584,10 +592,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  color: #acc9dc;
+  letter-spacing: 0.12em;
+  color: #c2dff2;
 }
 
 .hr-brand {
@@ -611,32 +619,34 @@
   font-size: clamp(24px, 2.8vw, 30px);
   line-height: 1.45;
   color: #ffffff;
+  text-wrap: balance;
 }
 
 .hr-body > p {
-  margin: 0 0 26px;
+  margin: 0 0 22px;
   font-size: 14px;
   line-height: 1.85;
-  color: #cde0ef;
+  color: #dbe9f4;
 }
 
 .hr-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 20px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(6px);
+  gap: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.hr-item {
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .hr-item small {
   display: block;
-  font-size: 10px;
-  letter-spacing: 0.12em;
+  font-size: 12px;
+  letter-spacing: 0.1em;
   font-weight: 700;
-  color: #9ec5e3;
+  color: #b6d8f2;
   margin-bottom: 4px;
 }
 
@@ -647,6 +657,12 @@
   color: #ffffff;
   line-height: 1.65;
   overflow-wrap: anywhere;
+}
+
+.hr-item a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
 }
 
 .hr-direct-btn {
@@ -671,10 +687,10 @@
 }
 
 .hr-bottom {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   font-weight: 700;
-  color: #94b5cb;
+  color: #b4d2e6;
 }
 
 .careers-page a:focus-visible,
@@ -741,6 +757,11 @@
   .form-row {
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    font-size: 16px;
   }
   .apply-submit {
     width: 100%;

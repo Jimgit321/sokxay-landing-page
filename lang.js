@@ -286,10 +286,14 @@
       menuToggleEl.setAttribute('aria-controls', 'mobileNavDrawer');
       menuToggleEl.setAttribute('aria-label', DICT.lo['menu.open']);
       menuToggleEl.innerHTML =
-        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">' +
-        '<line class="line-top" x1="4" y1="7" x2="20" y2="7"></line>' +
-        '<line class="line-mid" x1="4" y1="12" x2="20" y2="12"></line>' +
-        '<line class="line-bot" x1="4" y1="17" x2="20" y2="17"></line>' +
+        '<svg class="ico-burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">' +
+        '<line x1="4" y1="7" x2="20" y2="7"></line>' +
+        '<line x1="4" y1="12" x2="20" y2="12"></line>' +
+        '<line x1="4" y1="17" x2="20" y2="17"></line>' +
+        '</svg>' +
+        '<svg class="ico-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">' +
+        '<line x1="6" y1="6" x2="18" y2="18"></line>' +
+        '<line x1="18" y1="6" x2="6" y2="18"></line>' +
         '</svg>';
       headerRight.appendChild(menuToggleEl);
     } else {
