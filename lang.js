@@ -386,9 +386,15 @@
   function initLanguageSwitcher() {
     initMobileMenu();
 
+    const mobileLangQuery = window.matchMedia('(max-width: 960px)');
     document.querySelectorAll('.lang-btn').forEach(btn => {
       btn.addEventListener('click', function(e) {
         e.preventDefault();
+        if (mobileLangQuery.matches) {
+          const current = document.documentElement.lang === 'en' ? 'en' : 'lo';
+          applyLanguage(current === 'lo' ? 'en' : 'lo');
+          return;
+        }
         const isLao = this.textContent.includes('ລາວ');
         applyLanguage(isLao ? 'lo' : 'en');
       });
