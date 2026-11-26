@@ -278,11 +278,54 @@
 }
 
 .job-desc {
-  margin: 0 0 22px;
+  margin: 0 0 16px;
   font-size: 13.5px;
-  line-height: 1.8;
+  line-height: 1.75;
   color: var(--car-muted);
+}
+
+.job-req {
+  margin: 0 0 20px;
+  padding-top: 14px;
+  border-top: 1px dashed #dde8f0;
   flex: 1;
+}
+
+.job-req-title {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #155b9d;
+  letter-spacing: 0.01em;
+}
+
+.job-req-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.job-req-list li {
+  position: relative;
+  padding-left: 14px;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: #475c70;
+  text-wrap: pretty;
+}
+
+.job-req-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #155b9d;
 }
 
 .job-meta {
@@ -290,6 +333,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  margin-top: auto;
   padding-top: 16px;
   border-top: 1px solid #edf2f7;
 }
