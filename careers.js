@@ -3,9 +3,6 @@
     lo: {
       'car.bc': 'ສະໝັກງານ',
       'car.title': 'ຮ່ວມງານກັບພວກເຮົາ',
-      'car.introKicker': 'CAREERS AT SOKXAY',
-      'car.introH2': 'ສ້າງອະນາຄົດທາງອາຊີບ<br>ໄປພ້ອມກັບກຸ່ມໂຊກໄຊ',
-      'car.introP': 'ພວກເຮົາກຳລັງຊອກຫາບຸກຄະລາກອນທີ່ມີຄວາມຕັ້ງໃຈ, ກ້າຄິດກ້າເຮັດ ແລະ ພ້ອມຮຽນຮູ້ສິ່ງໃໝ່ ເພື່ອຮ່ວມຂັບເຄື່ອນທຸລະກິດໃນເຄືອກຸ່ມບໍລິສັດໂຊກໄຊ ໃນຫຼາກຫຼາຍຂະແໜງການທົ່ວປະເທດລາວ.',
       'car.jobsH2': 'ຕຳແໜ່ງງານທີ່ເປີດຮັບ',
       'car.jobsP': 'ເລືອກໝວດໝູ່ສາຍງານທີ່ທ່ານສົນໃຈ ຫຼື ກົດສະໝັກຕຳແໜ່ງທີ່ເໝາະສົມກັບທ່ານ.',
       'car.fAll': 'ທັງໝົດ',
@@ -71,9 +68,6 @@
     en: {
       'car.bc': 'Careers',
       'car.title': 'Join Our Team',
-      'car.introKicker': 'CAREERS AT SOKXAY',
-      'car.introH2': 'Build Your Career<br>With Sokxay Group',
-      'car.introP': 'We are looking for dedicated, proactive, and curious professionals to help drive growth across Sokxay Group’s diverse business sectors throughout Lao PDR.',
       'car.jobsH2': 'Open Positions',
       'car.jobsP': 'Filter by department or choose an open role to apply directly.',
       'car.fAll': 'All Roles',

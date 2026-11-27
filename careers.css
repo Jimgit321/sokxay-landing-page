@@ -29,39 +29,9 @@
   flex-shrink: 0;
 }
 
-/* Intro Header */
-.careers-intro {
-  padding: 68px 0 68px;
-  background: #ffffff;
-}
-
-.careers-intro-head {
-  display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 64px;
-  align-items: end;
-  margin-bottom: 0;
-}
-
-.careers-intro-head h2 {
-  margin: 16px 0 0;
-  font-size: clamp(28px, 3.6vw, 42px);
-  line-height: 1.4;
-  letter-spacing: -0.04em;
-  color: var(--car-navy);
-  text-wrap: balance;
-}
-
-.careers-intro-head p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.95;
-  color: var(--car-muted);
-}
-
 /* Open Positions Section */
 .careers-jobs {
-  padding: 84px 0 92px;
+  padding: 72px 0 92px;
   background: #edf4f9;
 }
 
@@ -691,10 +661,6 @@
 
 /* Responsive Rules */
 @media (max-width: 1020px) {
-  .careers-intro-head {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
   .jobs-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -704,11 +670,8 @@
 }
 
 @media (max-width: 680px) {
-  .careers-intro {
-    padding: 52px 0;
-  }
   .careers-jobs {
-    padding: 52px 0 60px;
+    padding: 48px 0 60px;
   }
   .jobs-heading {
     flex-direction: column;
