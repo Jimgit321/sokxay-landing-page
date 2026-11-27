@@ -1005,4 +1005,107 @@ footer :is(a, button):focus-visible,
   .menu-toggle svg {
     transition-duration: 0.01s !important;
   }
+  .hero-companies-track {
+    animation: none !important;
+  }
+  .hero-companies {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+/* Clean White Borderless Subsidiary Ribbon Below Hero */
+@keyframes sokxayCompaniesFlow {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.hero-companies {
+  flex-shrink: 0;
+  background: #ffffff;
+  padding: 20px 0;
+  overflow: hidden;
+  border: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%);
+}
+
+.hero-companies-track {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  width: max-content;
+  will-change: transform;
+  animation: sokxayCompaniesFlow 42s linear infinite;
+}
+
+.hero-companies:hover .hero-companies-track,
+.hero-companies:focus-within .hero-companies-track {
+  animation-play-state: paused;
+}
+
+.hero-co-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  border: none;
+  background: transparent;
+  padding: 4px 2px;
+  color: #1e293b;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-co-item:hover {
+  color: var(--blue);
+  transform: translateY(-1px);
+}
+
+.hero-co-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: transparent;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.hero-co-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-screen:has(.hero-companies) + .section.business {
+  padding-top: 84px;
+}
+
+@media (max-width: 720px) {
+  .hero-companies {
+    padding: 15px 0;
+  }
+  .hero-companies-track {
+    gap: 24px;
+    animation-duration: 30s;
+  }
+  .hero-co-item {
+    font-size: 12.5px;
+    gap: 8px;
+  }
+  .hero-co-logo {
+    width: 30px;
+    height: 30px;
+  }
+  .hero-screen:has(.hero-companies) + .section.business {
+    padding-top: 56px;
+  }
 }
